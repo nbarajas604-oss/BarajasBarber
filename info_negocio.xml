@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BARAJAS BARBER STUDIO — Información del negocio
+  Llena todos los campos y guarda el archivo.
+  Pon el logo en: assets/img/  (formatos aceptados: PNG, JPG, SVG)
+-->
+<negocio>
+
+  <!-- ── DATOS GENERALES ─────────────────────────────────────────── -->
+  <nombre>Barajas Barber Studio</nombre>
+  <slogan><!-- Ej: "Estilo y precisión en cada corte" -->Estilo y precisión en cada corte</slogan>
+  <descripcion>
+    <!-- Una o dos oraciones sobre la barbería para la sección "Sobre nosotros" -->
+  </descripcion>
+
+  <!-- ── CONTACTO ────────────────────────────────────────────────── -->
+  <contacto>
+    <telefono><!-- Ej: 3351501877 -->3351501877 </telefono>
+    <whatsapp><!-- Número con código de país, ej: 529991234567 -->+52 3351501877</whatsapp>
+    <email><!-- Opcional --></email>
+  </contacto>
+
+  <!-- ── UBICACIÓN ───────────────────────────────────────────────── -->
+  <ubicacion>
+    <direccion><!-- Calle, número, colonia, ciudad -->oyamel 1261 Colonia la Fortuna en villa de alvarez colima
+</direccion>
+    <google_maps_link><!-- Pega aquí el link de Google Maps -->765F+4P Cdad. de Villa de Álvarez, Colima</google_maps_link>
+    <google_maps_embed>
+      <!-- Opcional: iframe embed de Google Maps (para mostrar mapa en la página).
+           En Google Maps → Compartir → Incorporar un mapa → copia el código iframe -->
+    </google_maps_embed>
+  </ubicacion>
+
+  <!-- ── HORARIOS ────────────────────────────────────────────────── -->
+  <horarios>
+    <dia nombre="Lunes">6pm - 9 pm<!-- Ej: 9:00 AM – 8:00 PM  |  Cerrado --></dia>
+    <dia nombre="Martes">cerrado</dia>
+    <dia nombre="Miércoles">6pm - 9 pm</dia>
+    <dia nombre="Jueves">6pm - 9 pm</dia>
+    <dia nombre="Viernes">10am - 2pm</dia>
+    <dia nombre="Sábado">cerrado</dia>
+    <dia nombre="Domingo">7pm a 9 pm</dia>
+  </horarios>
+
+  <!-- ── SERVICIOS Y PRECIOS ─────────────────────────────────────── -->
+  <servicios>
+    <!-- Agrega o elimina <servicio> según necesites -->
+    <servicio>
+      <nombre><!-- Ej: Corte de cabello --></nombre>
+      <precio><!-- Ej: $100 --></precio>
+      <descripcion><!-- Opcional: breve descripción del servicio --></descripcion>
+    </servicio>
+    <servicio>
+      <nombre><!-- Ej: Arreglo de barba --></nombre>
+      <precio>50</precio>
+      <descripcion>Definicion y corte de barba</descripcion>
+    </servicio>
+    <servicio>
+      <nombre><!-- Ej: Corte + Barba -->Corte + Barba</nombre>
+      <precio>140</precio>
+      <descripcion>Definicion y corte de ambos</descripcion>
+    </servicio>
+    <servicio>
+      <nombre></nombre>
+      <precio></precio>
+      <descripcion></descripcion>
+    </servicio>
+    <servicio>
+      <nombre></nombre>
+      <precio></precio>
+      <descripcion></descripcion>
+    </servicio>
+  </servicios>
+
+  <!-- ── REDES SOCIALES ─────────────────────────────────────────── -->
+  <redes>
+    <facebook><!-- Link completo o usuario, ej: facebook.com/BarajasBarberStudio --></facebook>
+    <instagram><!-- Ej: @BarajasBarberStudio --></instagram>
+    <tiktok><!-- Opcional --></tiktok>
+  </redes>
+
+  <!-- ── CITAS EN LÍNEA ─────────────────────────────────────────── -->
+  <citas>
+    <!-- ¿Cómo quieres que agenden cita? Elige una opción y llena el dato -->
+    <whatsapp_link><!-- Si quieren agendar por WhatsApp, pon el número (mismo que arriba) --></whatsapp_link>
+    <calendly><!-- Si usas Calendly, pon el link de tu perfil --></calendly>
+    <otra_plataforma><!-- Booksy, SimplyBook, etc. --></otra_plataforma>
+  </citas>
+
+  <!-- ── LOGO ───────────────────────────────────────────────────── -->
+  <logo>
+    <archivo><!-- Nombre del archivo, ej: logo.png  (colócalo en assets/img/) --></archivo>
+  </logo>
+
+  <!-- ── COLORES / ESTILO (opcional) ────────────────────────────── -->
+  <estilo>
+    <color_principal><!-- Ej: #1a1a1a (negro), #c8a96e (dorado), #2c2c2c --></color_principal>
+    <color_acento><!-- Color secundario --></color_acento>
+    <estilo_preferido><!-- Oscuro / Claro / Minimalista / Clásico / Moderno --></estilo_preferido>
+  </estilo>
+
+</negocio>
