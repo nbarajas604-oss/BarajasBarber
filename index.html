@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Barajas Barber Studio — Cortes de cabello y arreglo de barba en Villa de Álvarez, Colima. Agenda tu cita por WhatsApp." />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self';" />
   <title>Barajas Barber Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -16,12 +15,12 @@
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-brand">BARAJAS<span class="gold"> BARBER</span></span>
-      <button class="nav-toggle" aria-label="Menú" onclick="toggleMenu()">&#9776;</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menú" aria-expanded="false">&#9776;</button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#servicios" onclick="closeMenu()">Servicios</a></li>
-        <li><a href="#horarios"  onclick="closeMenu()">Horarios</a></li>
-        <li><a href="#ubicacion" onclick="closeMenu()">Ubicación</a></li>
-        <li><a href="#contacto"  onclick="closeMenu()" class="btn-nav">Agendar cita</a></li>
+        <li><a href="#servicios" class="js-nav-link">Servicios</a></li>
+        <li><a href="#horarios"  class="js-nav-link">Horarios</a></li>
+        <li><a href="#ubicacion" class="js-nav-link">Ubicación</a></li>
+        <li><a href="#contacto"  class="js-nav-link btn-nav">Agendar cita</a></li>
       </ul>
     </div>
   </nav>
@@ -36,7 +35,7 @@
       <h1>Barajas <span class="gold">Barber Studio</span></h1>
       <p class="slogan">Estilo y precisión en cada corte</p>
       <a href="https://wa.me/523351501877?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Barajas%20Barber%20Studio%20%F0%9F%92%88"
-         target="_blank" rel="noopener" class="btn-primary">
+         target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-primary">
         💈 Agendar cita por WhatsApp
       </a>
     </div>
@@ -86,7 +85,7 @@
           <p>Corte personalizado a tu estilo, con acabado profesional.</p>
           <div class="service-price">$100</div>
           <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20un%20corte%20de%20cabello%20%F0%9F%92%88"
-             target="_blank" rel="noopener" class="btn-service">Agendar</a>
+             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
         </div>
 
         <div class="service-card featured">
@@ -96,7 +95,7 @@
           <p>Combo completo: corte de cabello y definición de barba.</p>
           <div class="service-price">$140</div>
           <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20corte%20%2B%20barba%20%F0%9F%92%88"
-             target="_blank" rel="noopener" class="btn-service">Agendar</a>
+             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
         </div>
 
         <div class="service-card">
@@ -105,7 +104,7 @@
           <p>Definición y corte de barba con navaja y acabado perfecto.</p>
           <div class="service-price">$50</div>
           <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20arreglo%20de%20barba%20%F0%9F%AA%92"
-             target="_blank" rel="noopener" class="btn-service">Agendar</a>
+             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
         </div>
 
       </div>
@@ -182,14 +181,14 @@
               <strong>Google Maps</strong>
               <p>
                 <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima"
-                   target="_blank" rel="noopener">Ver en Google Maps →</a>
+                   target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Ver en Google Maps →</a>
               </p>
             </div>
           </div>
         </div>
         <div class="map-placeholder">
           <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima"
-             target="_blank" rel="noopener" class="map-link">
+             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="map-link">
             <div class="map-icon">🗺️</div>
             <span>Abrir en Google Maps</span>
           </a>
@@ -205,11 +204,11 @@
       <p class="section-text">Agenda tu cita ahora mismo, es rápido y sencillo.</p>
       <div class="cta-buttons">
         <a href="https://wa.me/523351501877?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Barajas%20Barber%20Studio%20%F0%9F%92%88"
-           target="_blank" rel="noopener" class="btn-primary btn-lg">
+           target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-primary btn-lg">
           💬 WhatsApp
         </a>
         <a href="https://facebook.com/BarajasBarber"
-           target="_blank" rel="noopener" class="btn-secondary btn-lg">
+           target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-secondary btn-lg">
           📘 Facebook
         </a>
       </div>
@@ -221,9 +220,9 @@
     <div class="container footer-inner">
       <span class="footer-brand">Barajas <span class="gold">Barber Studio</span></span>
       <div class="footer-links">
-        <a href="https://facebook.com/BarajasBarber" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://wa.me/523351501877" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima" target="_blank" rel="noopener">Google Maps</a>
+        <a href="https://facebook.com/BarajasBarber" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Facebook</a>
+        <a href="https://wa.me/523351501877" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">WhatsApp</a>
+        <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Google Maps</a>
       </div>
       <p class="footer-copy">© 2026 Barajas Barber Studio · Villa de Álvarez, Colima</p>
     </div>

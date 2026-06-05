@@ -1,10 +1,27 @@
 // ── Menú móvil ──────────────────────────────────────────────────────
-function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
-}
-function closeMenu() {
-  document.getElementById('navLinks').classList.remove('open');
-}
+const navToggle = document.getElementById('nav-toggle');
+const navLinks  = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+
+document.querySelectorAll('.js-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (navLinks.classList.contains('open') &&
+      !navLinks.contains(e.target) &&
+      !navToggle.contains(e.target)) {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
 
 // ── Navbar sólido al hacer scroll ───────────────────────────────────
 window.addEventListener('scroll', () => {
@@ -29,20 +46,3 @@ document.querySelectorAll('.service-card, .pillar, .location-item, .schedule tr'
     el.classList.add('fade-in');
     observer.observe(el);
   });
-
-// CSS para animaciones (inyectado aquí para no complicar el CSS)
-const style = document.createElement('style');
-style.textContent = `
-  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
-`;
-document.head.appendChild(style);
-
-// ── Cerrar menú al hacer clic fuera ─────────────────────────────────
-document.addEventListener('click', (e) => {
-  const nav = document.getElementById('navLinks');
-  const btn = document.querySelector('.nav-toggle');
-  if (nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) {
-    nav.classList.remove('open');
-  }
-});
