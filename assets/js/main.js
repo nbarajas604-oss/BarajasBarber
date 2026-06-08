@@ -31,6 +31,22 @@ window.addEventListener('scroll', () => {
     : 'rgba(200,167,68,.15)';
 }, { passive: true });
 
+// ── Lightbox galería ────────────────────────────────────────────────
+function openLightbox(item) {
+  const img = item.querySelector('img');
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox-img').alt = img.alt;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 // ── Animación de entrada al hacer scroll ────────────────────────────
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {

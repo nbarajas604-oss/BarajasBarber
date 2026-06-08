@@ -27,6 +27,7 @@
         <li><a href="#servicios" class="js-nav-link">Servicios</a></li>
         <li><a href="#horarios"  class="js-nav-link">Horarios</a></li>
         <li><a href="#ubicacion" class="js-nav-link">Ubicación</a></li>
+        <li><a href="#galeria"  class="js-nav-link">Galería</a></li>
         <li><a href="https://www.instagram.com/barajasbarbershop2026" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="js-nav-link">📸 Instagram</a></li>
         <li><a href="#contacto"  class="js-nav-link btn-nav">Agendar cita</a></li>
       </ul>
@@ -208,6 +209,47 @@
       </div>
     </div>
   </section>
+
+  <!-- ══ GALERÍA ══════════════════════════════════════════════════ -->
+  <section id="galeria" class="section-dark">
+    <div class="container">
+      <div class="divider"><span>✦</span></div>
+      <h2 class="section-title">Nuestro <span class="gold">Trabajo</span></h2>
+      <p class="section-text">Cada corte, una obra. Conoce nuestro estilo.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-01.jpg" alt="Corte de cabello 1" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-02.jpg" alt="Corte de cabello 2" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-03.jpg" alt="Corte de cabello 3" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-04.jpg" alt="Corte de cabello 4" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-05.jpg" alt="Corte de cabello 5" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="assets/img/galeria/corte-06.jpg" alt="Corte de cabello 6" loading="lazy" width="600" height="600" />
+          <div class="gallery-overlay"><span>Ver</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LIGHTBOX ══════════════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
 
   <!-- ══ CONTACTO / CTA ════════════════════════════════════════════ -->
   <section id="contacto" class="section-cta">
