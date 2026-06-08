@@ -307,6 +307,18 @@ footer {
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto; }
+  .fade-in { opacity: 1; transform: none; }
+}
+
+/* ── RENDER OFF-SCREEN ───────────────────────────────────────────── */
+#sobre, #servicios, #horarios, #ubicacion, #contacto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .nav-toggle { display: block; }

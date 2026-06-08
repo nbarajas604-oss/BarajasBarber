@@ -24,12 +24,12 @@ document.addEventListener('click', (e) => {
 });
 
 // ── Navbar sólido al hacer scroll ───────────────────────────────────
+const nav = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
   nav.style.borderBottomColor = window.scrollY > 60
     ? 'rgba(200,167,68,.35)'
     : 'rgba(200,167,68,.15)';
-});
+}, { passive: true });
 
 // ── Animación de entrada al hacer scroll ────────────────────────────
 const observer = new IntersectionObserver((entries) => {
