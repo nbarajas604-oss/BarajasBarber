@@ -3,290 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Barajas Barber Studio — Cortes de cabello y arreglo de barba en Villa de Álvarez, Colima. Agenda tu cita por WhatsApp." />
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self';" />
-  <title>Barajas Barber Studio</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Barajas Barber Studio — sitio en mantenimiento. Agenda tu cita por WhatsApp." />
+  <title>Barajas Barber Studio — En mantenimiento</title>
   <link rel="icon" type="image/png" href="assets/img/logo.png" />
-  <link rel="apple-touch-icon" href="assets/img/logo.png" />
-  <link rel="preconnect" href="https://wa.me" crossorigin />
-  <link rel="dns-prefetch" href="https://wa.me" />
-  <link rel="dns-prefetch" href="https://maps.google.com" />
-  <link rel="dns-prefetch" href="https://facebook.com" />
-  <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --gold: #c9a24b;
+      --text: #ece7dd;
+      --muted: #9a938680;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 30%, #1c1a17 0%, var(--bg) 70%);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      text-align: center;
+      padding: 2rem 1.25rem;
+    }
+    .card { max-width: 480px; }
+    .logo {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      margin-bottom: 1.75rem;
+      filter: drop-shadow(0 4px 18px rgba(201,162,75,.25));
+    }
+    .brand {
+      font-size: 1.9rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .gold { color: var(--gold); }
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.4rem auto;
+      opacity: .7;
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      color: #cfc8bb;
+      line-height: 1.6;
+      font-size: 1.02rem;
+      margin-bottom: 1.9rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    a.btn:hover { transform: translateY(-2px); opacity: .92; }
+    .btn-wa { background: var(--gold); color: #1a1710; }
+    .btn-ghost {
+      border: 1px solid #5a534733;
+      background: #ffffff0d;
+      color: var(--text);
+    }
+    .foot {
+      margin-top: 2.5rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ══ NAV ══════════════════════════════════════════════════════ -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <span class="nav-brand">BARAJAS<span class="gold"> BARBER</span></span>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Menú" aria-expanded="false">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#servicios" class="js-nav-link">Servicios</a></li>
-        <li><a href="#horarios"  class="js-nav-link">Horarios</a></li>
-        <li><a href="#ubicacion" class="js-nav-link">Ubicación</a></li>
-        <li><a href="#galeria"  class="js-nav-link">Galería</a></li>
-        <li><a href="https://www.instagram.com/barajasbarbershop2026" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="js-nav-link">📸 Instagram</a></li>
-        <li><a href="#contacto"  class="js-nav-link btn-nav">Agendar cita</a></li>
-      </ul>
+  <main class="card">
+    <img src="assets/img/logo.png" alt="Barajas Barber Studio" class="logo" width="130" height="130" />
+    <div class="brand">BARAJAS<span class="gold"> BARBER</span> STUDIO</div>
+    <div class="divider"></div>
+    <h1>💈 Estamos afinando detalles</h1>
+    <p>
+      Nuestro sitio está en mantenimiento por el momento.<br />
+      ¡Pero seguimos atendiendo! Agenda tu cita directamente por WhatsApp.
+    </p>
+    <div class="actions">
+      <a class="btn btn-wa"
+         href="https://wa.me/523351501877?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Barajas%20Barber%20Studio%20%F0%9F%92%88"
+         target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">💬 Agendar por WhatsApp</a>
+      <a class="btn btn-ghost"
+         href="https://www.facebook.com/barajasbarberShop08/"
+         target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📘 Facebook</a>
+      <a class="btn btn-ghost"
+         href="https://www.instagram.com/barajasbarbershop2026"
+         target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📸 Instagram</a>
     </div>
-  </nav>
-
-  <!-- ══ HERO ══════════════════════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="logo-wrap">
-        <picture>
-          <source srcset="assets/img/logo.webp" type="image/webp" />
-          <img src="assets/img/logo.png" alt="Barajas Barber Studio logo" class="hero-logo"
-               width="400" height="400" fetchpriority="high" />
-        </picture>
-      </div>
-      <h1>Barajas <span class="gold">Barber Studio</span></h1>
-      <p class="slogan">Estilo y precisión en cada corte</p>
-      <a href="https://wa.me/523351501877?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Barajas%20Barber%20Studio%20%F0%9F%92%88"
-         target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-primary">
-        💈 Agendar cita por WhatsApp
-      </a>
-    </div>
-    <div class="hero-scroll">↓</div>
-  </section>
-
-  <!-- ══ SOBRE NOSOTROS ════════════════════════════════════════════ -->
-  <section id="sobre" class="section-dark">
-    <div class="container">
-      <div class="divider"><span>✦</span></div>
-      <h2 class="section-title">Sobre <span class="gold">Nosotros</span></h2>
-      <p class="section-text">
-        En <strong>Barajas Barber Studio</strong> nos especializamos en cortes modernos y clásicos
-        con la más alta precisión. Cada visita es una experiencia de estilo, confianza y calidad
-        en el corazón de Villa de Álvarez, Colima.
-      </p>
-      <div class="pillars">
-        <div class="pillar">
-          <span class="pillar-icon">✂️</span>
-          <h3>Precisión</h3>
-          <p>Cada corte ejecutado con técnica y detalle.</p>
-        </div>
-        <div class="pillar">
-          <span class="pillar-icon">👑</span>
-          <h3>Estilo</h3>
-          <p>Tendencias actuales adaptadas a tu personalidad.</p>
-        </div>
-        <div class="pillar">
-          <span class="pillar-icon">💈</span>
-          <h3>Tradición</h3>
-          <p>El arte de la barbería clásica con toque moderno.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ SERVICIOS ════════════════════════════════════════════════ -->
-  <section id="servicios" class="section-darker">
-    <div class="container">
-      <div class="divider"><span>✦</span></div>
-      <h2 class="section-title">Nuestros <span class="gold">Servicios</span></h2>
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon">✂️</div>
-          <h3>Corte de Cabello</h3>
-          <p>Corte personalizado a tu estilo, con acabado profesional.</p>
-          <div class="service-price">$100</div>
-          <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20un%20corte%20de%20cabello%20%F0%9F%92%88"
-             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
-        </div>
-
-        <div class="service-card featured">
-          <div class="badge">Popular</div>
-          <div class="service-icon">💈</div>
-          <h3>Corte + Barba</h3>
-          <p>Combo completo: corte de cabello y definición de barba.</p>
-          <div class="service-price">$140</div>
-          <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20corte%20%2B%20barba%20%F0%9F%92%88"
-             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🪒</div>
-          <h3>Arreglo de Barba</h3>
-          <p>Definición y corte de barba con navaja y acabado perfecto.</p>
-          <div class="service-price">$50</div>
-          <a href="https://wa.me/523351501877?text=Hola%2C%20quiero%20agendar%20arreglo%20de%20barba%20%F0%9F%AA%92"
-             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-service">Agendar</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ HORARIOS ══════════════════════════════════════════════════ -->
-  <section id="horarios" class="section-dark">
-    <div class="container">
-      <div class="divider"><span>✦</span></div>
-      <h2 class="section-title">Nuestros <span class="gold">Horarios</span></h2>
-      <div class="schedule-wrap">
-        <table class="schedule">
-          <tbody>
-            <tr>
-              <td class="day">Lunes</td>
-              <td class="time open">6:00 PM – 9:00 PM</td>
-            </tr>
-            <tr>
-              <td class="day">Martes</td>
-              <td class="time closed">Cerrado</td>
-            </tr>
-            <tr>
-              <td class="day">Miércoles</td>
-              <td class="time open">6:00 PM – 9:00 PM</td>
-            </tr>
-            <tr>
-              <td class="day">Jueves</td>
-              <td class="time open">6:00 PM – 9:00 PM</td>
-            </tr>
-            <tr>
-              <td class="day">Viernes</td>
-              <td class="time open">10:00 AM – 2:00 PM</td>
-            </tr>
-            <tr>
-              <td class="day">Sábado</td>
-              <td class="time closed">Cerrado</td>
-            </tr>
-            <tr>
-              <td class="day">Domingo</td>
-              <td class="time open">7:00 PM – 9:00 PM</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="schedule-note">* Los horarios pueden variar. Confirma tu cita por WhatsApp.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ UBICACIÓN ════════════════════════════════════════════════ -->
-  <section id="ubicacion" class="section-darker">
-    <div class="container">
-      <div class="divider"><span>✦</span></div>
-      <h2 class="section-title">¿Dónde <span class="gold">Encontrarnos?</span></h2>
-      <div class="location-wrap">
-        <div class="location-info">
-          <div class="location-item">
-            <span class="loc-icon">📍</span>
-            <div>
-              <strong>Dirección</strong>
-              <p>Oyamel 1261, Col. La Fortuna<br>Villa de Álvarez, Colima</p>
-            </div>
-          </div>
-          <div class="location-item">
-            <span class="loc-icon">📞</span>
-            <div>
-              <strong>Teléfono</strong>
-              <p><a href="tel:3351501877">335 150 1877</a></p>
-            </div>
-          </div>
-          <div class="location-item">
-            <span class="loc-icon">🗺️</span>
-            <div>
-              <strong>Google Maps</strong>
-              <p>
-                <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima"
-                   target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Ver en Google Maps →</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="map-placeholder">
-          <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima"
-             target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="map-link">
-            <div class="map-icon">🗺️</div>
-            <span>Abrir en Google Maps</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ GALERÍA ══════════════════════════════════════════════════ -->
-  <section id="galeria" class="section-dark">
-    <div class="container">
-      <div class="divider"><span>✦</span></div>
-      <h2 class="section-title">Nuestro <span class="gold">Trabajo</span></h2>
-      <p class="section-text">Cada corte, una obra. Conoce nuestro estilo.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-01.jpg" alt="Corte de cabello 1" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-02.jpg" alt="Corte de cabello 2" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-03.jpg" alt="Corte de cabello 3" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-04.jpg" alt="Corte de cabello 4" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-05.jpg" alt="Corte de cabello 5" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="assets/img/galeria/corte-06.jpg" alt="Corte de cabello 6" loading="lazy" width="600" height="600" />
-          <div class="gallery-overlay"><span>Ver</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ LIGHTBOX ══════════════════════════════════════════════════ -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <img id="lightbox-img" src="" alt="" />
-  </div>
-
-  <!-- ══ CONTACTO / CTA ════════════════════════════════════════════ -->
-  <section id="contacto" class="section-cta">
-    <div class="container">
-      <h2 class="section-title">¿Listo para tu <span class="gold">cambio de look?</span></h2>
-      <p class="section-text">Agenda tu cita ahora mismo, es rápido y sencillo.</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/523351501877?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Barajas%20Barber%20Studio%20%F0%9F%92%88"
-           target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-primary btn-lg">
-          💬 WhatsApp
-        </a>
-        <a href="https://www.facebook.com/barajasbarberShop08/"
-           target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-secondary btn-lg">
-          📘 Facebook
-        </a>
-        <a href="https://www.instagram.com/barajasbarbershop2026"
-           target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-secondary btn-lg">
-          📸 Instagram
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ════════════════════════════════════════════════════ -->
-  <footer>
-    <div class="container footer-inner">
-      <span class="footer-brand">Barajas <span class="gold">Barber Studio</span></span>
-      <div class="footer-links">
-        <a href="https://www.facebook.com/barajasbarberShop08/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Facebook</a>
-        <a href="https://www.instagram.com/barajasbarbershop2026" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Instagram</a>
-        <a href="https://wa.me/523351501877" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">WhatsApp</a>
-        <a href="https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Google Maps</a>
-      </div>
-      <p class="footer-copy">© 2026 Barajas Barber Studio · Villa de Álvarez, Colima</p>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+    <p class="foot">© 2026 Barajas Barber Studio · Villa de Álvarez, Colima</p>
+  </main>
 </body>
 </html>
